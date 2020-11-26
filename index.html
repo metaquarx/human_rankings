@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Human rankings</title>
+	<meta name="author" content="metaquarx">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" />
+	<script type="text/javascript" src="./assets/js/main.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="two-thirds column" style="margin-top: 25%">
+			<h1>Reddit human rankings</h1>
+			<p>This page is here to show you the rankings of different reddit users, as voted on by reddit users themselves.</p>
+		</div>
+	</div>
+	<div class="row">
+		<label for="sorting">Sort by</label>
+		<select class="u-half-width" id="sorting">
+			<option value="0">Name</option>
+			<option value="1">Good votes</option>
+			<option value="2">Bad votes</option>
+		</select>
+		<button class="button-primary" onclick="reload_table()">Refresh</button>
+	</div>
+	<div class="row">
+		<div class="two-thirds column" id="place_for_table" style="margin-bottom: 25%">
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
