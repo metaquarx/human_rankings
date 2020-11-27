@@ -1,6 +1,6 @@
 function reload_table() {
   fetch(
-      'https://raw.githubusercontent.com/metaquarx/i_rank_humans_database/master/db.json')
+      'https://raw.githubusercontent.com/humanranker/i_rank_humans_database/master/db.json')
       .then(res => res.json())
       .then((data) => {
         var table = document.createElement("table");
